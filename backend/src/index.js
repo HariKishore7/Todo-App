@@ -11,7 +11,7 @@ app.use(express.json()); // added body key to req
 app.use(cors({
     credentials: true,
     // origin: "http://localhost:8080", //Added 3001 as origin bcoz server is running on 3001
-    origin: "http://localhost:3000" 
+    origin: "http://localhost:3000" // we can allow from anywhere using '*'  
 }));
 app.use(
   session({
